@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<componentPackage>
+	
+	<!-- components -->
+	<component id="Button" class="reflex.components.Button" />
+	<component id="CheckBox" class="reflex.components.CheckBox" />
+	<component id="RadioButton" class="reflex.components.RadioButton" />
+	
+	<component id="HSlider" class="reflex.components.HSlider" />
+	<component id="VSlider" class="reflex.components.VSlider" />
+	<component id="Stepper" class="reflex.components.Stepper" />
+	<component id="HScrollBar" class="reflex.components.HScrollBar" />
+	<component id="VScrollBar" class="reflex.components.VScrollBar" />
+	
+	<component id="List" class="reflex.components.List" />
+	<component id="ListItem" class="reflex.components.ListItem"/>
+	
+	<component id="HGroup" class="reflex.components.HGroup"/>
+	<component id="VGroup" class="reflex.components.VGroup"/>
+	
+	<!-- skins -->
+	<component id="ListSkin" class="reflex.skins.ListSkin"/>
+	
+</componentPackage>
