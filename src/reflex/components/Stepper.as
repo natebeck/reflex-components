@@ -13,8 +13,8 @@ package reflex.components
 			super();
 			position = new Position();
 			skin = new StepperGraphic();
-			behaviors.movieClipSkin = new MovieClipSkinBehavior();
-			behaviors.step = new StepBehavior();
+			behaviors.addItem(new MovieClipSkinBehavior(this));
+			behaviors.addItem(new StepBehavior(this));
 		}
 		
 	}

@@ -5,22 +5,22 @@ package reflex.components
 	
 	import reflex.behaviors.ButtonBehavior;
 	import reflex.behaviors.MovieClipSkinBehavior;
-	import reflex.behaviors.SelectableBehavior;
-	import reflex.events.PropertyEvent;
+	import reflex.behaviors.SelectBehavior;
+	//import reflex.events.PropertyEvent;
 	
 	/**
 	 * @alpha
 	 */
-	public class ListItem extends ListItemDefinition
+	public class ListItem extends ButtonDefinition
 	{
 		
 		public function ListItem()
 		{
 			super();
 			skin = new ButtonGraphic();
-			behaviors.movieClipSkin = new MovieClipSkinBehavior();
-			behaviors.button = new ButtonBehavior();
-			behaviors.selectable = new SelectableBehavior();
+			behaviors.addItem(new MovieClipSkinBehavior(this));
+			behaviors.addItem(new ButtonBehavior(this));
+			behaviors.addItem(new SelectBehavior(this));
 		}
 		
 	}
