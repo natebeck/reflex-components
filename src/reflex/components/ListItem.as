@@ -1,17 +1,20 @@
 package reflex.components
 {
+	import flash.utils.getQualifiedClassName;
+	
 	import mx.core.IDataRenderer;
 	import mx.core.IFactory;
 	
 	import reflex.behaviors.ButtonBehavior;
 	import reflex.behaviors.MovieClipSkinBehavior;
 	import reflex.behaviors.SelectBehavior;
+
 	//import reflex.events.PropertyEvent;
 	
 	/**
 	 * @alpha
 	 */
-	public class ListItem extends ButtonDefinition
+	public class ListItem extends ListItemDefinition
 	{
 		
 		public function ListItem()
