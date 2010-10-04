@@ -5,10 +5,10 @@ package reflex.components
 	import reflex.behaviors.SlideBehavior;
 	import reflex.data.Position;
 
-	public class HSlider extends SliderDefinition
+	public class Knob extends SliderDefinition
 	{
 		
-		public function HSlider()
+		public function Knob()
 		{
 			super();
 			position = new Position();

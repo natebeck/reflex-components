@@ -2,7 +2,7 @@ package reflex.skins
 {
 	import reflex.binding.Bind;
 	import reflex.collections.SimpleCollection;
-	import reflex.display.Group;
+	import reflex.containers.Group;
 
 	public class ListSkin extends Skin
 	{

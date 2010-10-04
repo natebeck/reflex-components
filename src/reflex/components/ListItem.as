@@ -1,12 +1,9 @@
 package reflex.components
 {
-	import mx.core.IDataRenderer;
-	import mx.core.IFactory;
 	
 	import reflex.behaviors.ButtonBehavior;
 	import reflex.behaviors.MovieClipSkinBehavior;
 	import reflex.behaviors.SelectBehavior;
-	//import reflex.events.PropertyEvent;
 	
 	/**
 	 * @alpha

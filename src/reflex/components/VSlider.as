@@ -13,7 +13,7 @@ package reflex.components
 			super();
 			position = new Position();
 			skin = new ScrollBarGraphic()
-			behaviors.slider = new SlideBehavior();
+			behaviors.addItem(new SlideBehavior(this));
 		}
 		
 	}

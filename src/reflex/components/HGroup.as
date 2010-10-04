@@ -1,6 +1,6 @@
 package reflex.components
 {
-	import reflex.display.Group;
+	import reflex.containers.Group;
 	import reflex.layouts.HorizontalLayout;
 	
 	public class HGroup extends Group
