@@ -1,6 +1,5 @@
 package reflex.components
 {
-	import legato.components.ScrollBarGraphic;
 	
 	import reflex.behaviors.SlideBehavior;
 	import reflex.data.Position;
@@ -12,7 +11,7 @@ package reflex.components
 		{
 			super();
 			position = new Position();
-			skin = new ScrollBarGraphic()
+			skin = new ReflexSliderSkin();
 			behaviors.addItem(new SlideBehavior(this));
 		}
 		
