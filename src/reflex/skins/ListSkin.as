@@ -2,18 +2,19 @@ package reflex.skins
 {
 	import reflex.binding.Bind;
 	import reflex.collections.SimpleCollection;
+	import reflex.containers.Container;
 	import reflex.containers.Group;
 	import reflex.layouts.VerticalLayout;
 
 	public class ListSkin extends Skin
 	{
 		
-		public var container:Group;
+		public var container:Container;
 		
 		public function ListSkin()
 		{
 			super();
-			container = new Group();
+			container = new Container();
 			content = new SimpleCollection([container]);
 			Bind.addBinding(this, "container.content", this, "target.dataProvider");
 			Bind.addBinding(this, "container.template", this, "target.template");

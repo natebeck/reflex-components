@@ -15,8 +15,10 @@
 	<component id="List" class="reflex.components.List" />
 	<component id="ListItem" class="reflex.components.ListItem"/>
 	
-	<component id="HGroup" class="reflex.components.HGroup"/>
-	<component id="VGroup" class="reflex.components.VGroup"/>
+	<!-- containers -->
+	<component id="Group" class="reflex.containers.Group" />
+	<component id="HGroup" class="reflex.containers.HGroup"/>
+	<component id="VGroup" class="reflex.containers.VGroup"/>
 	
 	<!-- skins -->
 	<component id="ListSkin" class="reflex.skins.ListSkin"/>

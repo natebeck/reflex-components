@@ -1,9 +1,8 @@
-package reflex.components
+package reflex.containers
 {
-	import reflex.containers.Group;
 	import reflex.layouts.VerticalLayout;
 	
-	public class VGroup extends Group
+	public class VGroup extends Container
 	{
 		
 		public function VGroup()
