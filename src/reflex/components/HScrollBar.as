@@ -1,9 +1,6 @@
 package reflex.components
 {
 	import legato.components.ScrollBarGraphic;
-	
-	import mx.controls.scrollClasses.ScrollBar;
-	
 	import reflex.behaviors.MovieClipSkinBehavior;
 	import reflex.behaviors.SlideBehavior;
 	import reflex.behaviors.StepBehavior;

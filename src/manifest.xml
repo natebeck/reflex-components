@@ -16,6 +16,7 @@
 	<component id="ListItem" class="reflex.components.ListItem"/>
 	
 	<!-- containers -->
+	<component id="Application" class="reflex.containers.Application"/>
 	<component id="Group" class="reflex.containers.Group" />
 	<component id="HGroup" class="reflex.containers.HGroup"/>
 	<component id="VGroup" class="reflex.containers.VGroup"/>
