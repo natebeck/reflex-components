@@ -10,9 +10,11 @@ package reflex.components
 		public function HSlider()
 		{
 			super();
+			measured.width = 170;
+			measured.height = 20;
 			position = new Position();
-			skin = new ReflexSliderSkin();
-			behaviors.addItem(new SlideBehavior(this));
+			skin = new HorizontalSliderSkin();
+			behaviors.addItem(new SlideBehavior(this, SlideBehavior.HORIZONTAL));
 		}
 		
 	}

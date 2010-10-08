@@ -17,7 +17,7 @@ package reflex.components
 			skin = new ScrollBarGraphic();
 			behaviors.addItem(new MovieClipSkinBehavior(this));
 			behaviors.addItem(new StepBehavior(this));
-			behaviors.addItem(new SlideBehavior(this, true));
+			behaviors.addItem(new SlideBehavior(this, SlideBehavior.VERTICAL, true));
 		}
 		
 	}

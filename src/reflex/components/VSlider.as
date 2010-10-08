@@ -1,6 +1,5 @@
 package reflex.components
 {
-	import legato.components.ScrollBarGraphic;
 	
 	import reflex.behaviors.SlideBehavior;
 	import reflex.data.Position;
@@ -11,9 +10,11 @@ package reflex.components
 		public function VSlider()
 		{
 			super();
+			measured.width = 20;
+			measured.height = 170;
 			position = new Position();
-			skin = new ScrollBarGraphic()
-			behaviors.addItem(new SlideBehavior(this));
+			skin = new VerticalSliderSkin();
+			behaviors.addItem(new SlideBehavior(this, SlideBehavior.VERTICAL));
 		}
 		
 	}
