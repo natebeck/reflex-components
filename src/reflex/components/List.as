@@ -15,11 +15,14 @@ package reflex.components
 		public function List()
 		{
 			super();
-			skin = new ListSkin();
+			selection = new Selection();
 			layout = new VerticalLayout();
 			template = ListItem;
+			skin = new ListSkin();
+			Bind.addBinding(this, "skin.container.content", this, "dataProvider");
+			Bind.addBinding(this, "skin.container.template", this, "template");
+			Bind.addBinding(this, "skin.container.layout", this, "layout");
 			behaviors.addItem(new ListSelectionBehavior(this));
-			selection = new Selection();
 		}
 		
 	}
