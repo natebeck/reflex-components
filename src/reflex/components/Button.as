@@ -13,7 +13,7 @@ package reflex.components
 		public function Button()
 		{
 			super();
-			skin = new ReflexButtonSkin();
+			skin = new ButtonSkin();
 			behaviors.addItem(new MovieClipSkinBehavior(this));
 			behaviors.addItem(new ButtonBehavior(this));
 			//behaviors.addItem(new SelectBehavior(this));

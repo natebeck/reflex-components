@@ -10,7 +10,7 @@ package reflex.components
 		public function CheckBox()
 		{
 			super();
-			skin = new ReflexCheckBoxSkin();
+			skin = new CheckBoxSkin();
 			behaviors.addItem(new MovieClipSkinBehavior(this));
 			behaviors.addItem(new ButtonBehavior(this));
 			behaviors.addItem(new SelectBehavior(this));
