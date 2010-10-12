@@ -3,7 +3,12 @@ package reflex.containers
 	
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
+	import flash.events.ContextMenuEvent;
 	import flash.events.Event;
+	import flash.net.URLRequest;
+	import flash.net.navigateToURL;
+	import flash.ui.ContextMenu;
+	import flash.ui.ContextMenuItem;
 	
 	import reflex.binding.DataChange;
 	import reflex.layouts.BasicLayout;
@@ -27,6 +32,8 @@ package reflex.containers
 			DataChange.change(this, "backgroundColor", _backgroundColor, _backgroundColor = value);
 		}
 		
+		public var viewSourceURL:String;
+		
 		public function Application()
 		{
 			super();
@@ -35,8 +42,15 @@ package reflex.containers
 				return;
 			}
 			
-			//contextMenu = new ContextMenu();
-			//contextMenu.hideBuiltInItems();
+			var contextMenu:ContextMenu = new ContextMenu();
+			if(viewSourceURL != null && viewSourceURL != "") {
+				var viewSourceCMI:ContextMenuItem = new ContextMenuItem("View Source", true);
+				viewSourceCMI.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, menuItemSelectHandler);
+				contextMenu.customItems.push(viewSourceCMI);
+			}
+			contextMenu.hideBuiltInItems();
+			this.contextMenu = contextMenu;
+			
 			stage.scaleMode = StageScaleMode.NO_SCALE;
 			stage.align = StageAlign.TOP_LEFT;
 			stage.addEventListener(Event.RESIZE, onStageResize, false, 0, true);
@@ -49,5 +63,11 @@ package reflex.containers
 			height = stage.stageHeight;
 			//setSize(stage.stageWidth, stage.stageHeight);
 		}
+		
+		private function menuItemSelectHandler(event:ContextMenuEvent):void {
+			var request:URLRequest = new URLRequest(viewSourceURL);
+			navigateToURL(request, "_blank");
+		}
+		
 	}
 }

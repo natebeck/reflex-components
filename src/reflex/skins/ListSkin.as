@@ -18,6 +18,7 @@ package reflex.skins
 		public function ListSkin()
 		{
 			super();
+			layout = new BasicLayout();
 			container = new Container();
 			container.setStyle("horizontalCenter", 0);
 			container.setStyle("verticalCenter", 0);

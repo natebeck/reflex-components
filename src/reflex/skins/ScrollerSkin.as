@@ -19,14 +19,12 @@ package reflex.skins
 		public function ScrollerSkin()
 		{
 			super();
-			
+			layout = new BasicLayout();
 			container = new Container();
-			
 			var mask:Rect = new Rect();
 			mask.fill = new SolidColor(0, 1);
 			mask.percentWidth = 100;
 			mask.percentHeight = 100;
-
 			container.mask = mask;
 			content = new SimpleCollection([container, mask]);
 		}
