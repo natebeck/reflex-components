@@ -20,6 +20,7 @@ package reflex.components
 			skin = new ScrollerSkin();
 			Bind.addBinding(this, "skin.container.content", this, "content");
 			Bind.addBinding(this, "skin.container.layout", this, "layout");
+			
 			//Bind.addBinding(this, "skin.container.mask", this, "skin.mask");
 			behaviors.addItem(new ScrollerBehavior(this));
 		}

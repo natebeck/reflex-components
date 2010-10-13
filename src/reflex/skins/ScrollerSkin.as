@@ -21,6 +21,9 @@ package reflex.skins
 			super();
 			layout = new BasicLayout();
 			container = new Container();
+			container.percentWidth = 100;
+			container.percentHeight = 100;
+			
 			var mask:Rect = new Rect();
 			mask.fill = new SolidColor(0, 1);
 			mask.percentWidth = 100;

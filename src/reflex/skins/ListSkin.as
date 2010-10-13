@@ -20,8 +20,10 @@ package reflex.skins
 			super();
 			layout = new BasicLayout();
 			container = new Container();
-			container.setStyle("horizontalCenter", 0);
-			container.setStyle("verticalCenter", 0);
+			container.setStyle("left", 0);
+			container.setStyle("right", 0);
+			container.setStyle("top", 0);
+			container.setStyle("bottom", 0);
 			content = new SimpleCollection([container]);
 		}
 		

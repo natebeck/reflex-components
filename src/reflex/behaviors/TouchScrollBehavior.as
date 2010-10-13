@@ -29,6 +29,9 @@ package reflex.behaviors
 		[Binding(target="target.horizontalPosition")]
 		public var horizontalPosition:IPosition;
 		
+		public var horizontalControl:Boolean = true;
+		public var verticalControl:Boolean = true;
+		
 		public function TouchScrollBehavior(target:IEventDispatcher=null)
 		{
 			super(target);
@@ -56,12 +59,12 @@ package reflex.behaviors
 		}
 		
 		private function scrolling_enterFrameHandler(event:Event):void {
-			if(horizontalPosition) {
+			if(horizontalPosition && horizontalControl) {
 				speed.x = point.x - (target as DisplayObject).mouseX;
 				var px:Number = horizontalPosition.value + speed.x;
 				horizontalPosition.value = Math.max(horizontalPosition.minimum, Math.min(horizontalPosition.maximum, px));
 			}
-			if(verticalPosition) {
+			if(verticalPosition && verticalControl) {
 				speed.y = point.y - (target as DisplayObject).mouseY;
 				var py:Number = verticalPosition.value + speed.y;
 				verticalPosition.value = Math.max(verticalPosition.minimum, Math.min(verticalPosition.maximum, py));
@@ -72,11 +75,11 @@ package reflex.behaviors
 		}
 		
 		private function animation_enterFrameHandler(event:Event):void {
-			if(horizontalPosition) {
+			if(horizontalPosition && horizontalControl) {
 				var px:Number = horizontalPosition.value + speed.x;
 				horizontalPosition.value = Math.max(horizontalPosition.minimum, Math.min(horizontalPosition.maximum, px));
 			}
-			if(verticalPosition) {
+			if(verticalPosition && verticalControl) {
 				var py:Number = verticalPosition.value + speed.y;
 				verticalPosition.value = Math.max(verticalPosition.minimum, Math.min(verticalPosition.maximum, py));
 			}

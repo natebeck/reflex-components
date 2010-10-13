@@ -17,6 +17,7 @@ package reflex.components
 			super();
 			selection = new Selection();
 			layout = new VerticalLayout();
+			(layout as VerticalLayout).gap = 0;
 			template = ListItem;
 			skin = new ListSkin();
 			Bind.addBinding(this, "skin.container.content", this, "dataProvider");
