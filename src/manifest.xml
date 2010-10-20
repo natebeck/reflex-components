@@ -23,6 +23,9 @@
 	<component id="HGroup" class="reflex.containers.HGroup"/>
 	<component id="VGroup" class="reflex.containers.VGroup"/>
 	
+	<!-- behaviors -->
+	<component id="TouchScrollBehavior" class="reflex.behaviors.TouchScrollBehavior" />
+	
 	<!-- skins -->
 	<component id="ListSkin" class="reflex.skins.ListSkin"/>
 	
