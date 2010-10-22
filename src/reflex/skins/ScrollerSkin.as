@@ -1,5 +1,6 @@
 package reflex.skins
 {
+	import flash.display.DisplayObject;
 	import flash.display.Shape;
 	
 	import mx.graphics.SolidColor;
@@ -15,6 +16,9 @@ package reflex.skins
 		
 		[Bindable]
 		public var container:Container;
+		
+		[Bindable]
+		public var mask:DisplayObject;
 		
 		public function ScrollerSkin()
 		{
